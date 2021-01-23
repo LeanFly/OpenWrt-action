@@ -10,7 +10,7 @@
 
 # git clone https://github.com/P3TERX/xxx package/xxx
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean
-
+git clone https://github.com/t123yh/lede-ddns-dnspod.git package/lean
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.15.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
