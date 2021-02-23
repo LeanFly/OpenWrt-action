@@ -13,6 +13,6 @@ git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-se
 git clone https://github.com/ntlf9t/luci-app-dnspod package/lean/luci-app-dnspod
 git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-app-poweroff
 git clone https://github.com/LeanFly/tencentcloud-openwrt-plugin-ddns package/tencentcloud-openwrt-plugin-ddns
-
+git clone https://github.com/immortalwrt/luci-app-koolproxyR package/lean/luci-app-koolproxyR
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
