@@ -16,5 +16,9 @@ git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-
 # git clone https://github.com/immortalwrt/luci-app-koolproxyR package/lean/luci-app-koolproxyR
 git clone https://github.com/project-lede/luci-app-godproxy package/lean/luci-app-godproxy
 git clone https://github.com/lisaac/luci-app-dockerman package/lean/luci-app-dockerman
+# 梅林小宝的ddnsto内网穿透服务
+git clone https://github.com/linkease/ddnsto-openwrt package/lean/ddnsto-openwrt
+cp -r package/lean/ddnsto-openwrt/ package/network/services/
+
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
