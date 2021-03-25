@@ -19,6 +19,7 @@ git clone https://github.com/project-lede/luci-app-godproxy package/lean/luci-ap
 # 梅林小宝的ddnsto内网穿透服务
 git clone https://github.com/linkease/ddnsto-openwrt package/lean/ddnsto-openwrt
 cp -r package/lean/ddnsto-openwrt/ package/network/services/
-
+# 应用过滤
+git clone https://github.com/destan19/OpenAppFilter package/lean/OpenAppFilter
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
