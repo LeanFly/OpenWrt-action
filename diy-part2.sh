@@ -15,7 +15,7 @@ git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-
 # git clone https://github.com/LeanFly/tencentcloud-openwrt-plugin-ddns package/tencentcloud-openwrt-plugin-ddns
 # git clone https://github.com/immortalwrt/luci-app-koolproxyR package/lean/luci-app-koolproxyR
 git clone https://github.com/project-lede/luci-app-godproxy package/lean/luci-app-godproxy
-git clone https://github.com/lisaac/luci-app-dockerman package/lean/luci-app-dockerman
+# git clone https://github.com/lisaac/luci-app-dockerman package/lean/luci-app-dockerman
 # 梅林小宝的ddnsto内网穿透服务
 git clone https://github.com/linkease/ddnsto-openwrt package/lean/ddnsto-openwrt
 cp -r package/lean/ddnsto-openwrt/ package/network/services/
