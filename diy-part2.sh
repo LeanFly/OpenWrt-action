@@ -16,7 +16,7 @@ git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-
 # git clone https://github.com/immortalwrt/luci-app-koolproxyR package/lean/luci-app-koolproxyR
 git clone https://github.com/project-lede/luci-app-godproxy package/lean/luci-app-godproxy
 # git clone https://github.com/lisaac/luci-app-dockerman package/lean/luci-app-dockerman
-
+git clone https://github.com/zzsj0928/luci-app-pushbot package/lean/luci-app-pushbot
 # 应用过滤
 # git clone https://github.com/destan19/OpenAppFilter package/lean/OpenAppFilter
 # Modify default IP
