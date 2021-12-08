@@ -17,6 +17,40 @@ menuconfig 勾选 usbmuxd
 
 Android：
 需要配置 usbwan ifname为usb0
+config interface 'usb0'
+  option ifname 'usb0'
+  option proto 'dhcp'
+
+ubus call network reload
 
 iPhone：
 配置usbwan ifname为usb%d
+
+iPhone的USB tethering需要usbmuxd进程的运行。usbmuxd并不会自动运行，因此可以在OpenWrt终端手动启动，或制作以下开机自启动脚本，并enable（/etc/init.d/usbmuxd enable）
+
+#!/bin/sh /etc/rc.common
+# Copyright (c) 2011-2012 Openwrt.org
+START=99
+
+stop() {
+  killall usbmuxd
+}
+
+start() {
+  if [ ! -d "/var/lib/lockdown" ];then
+    mdir -p /var/lib/lockdown
+  fi
+  ./usr/sbin/usbmuxd &
+}
+
+
+在usbmuxd进程启动的前提下，iPhone在“设置”->“个人热点”，打开后，通过USB连接OpenWrt。
+同样，通过cat /proc/net/dev查看新增加的网络设备，iOS一般是eth2。
+在/etc/config/network中增加下面一段，其他firewall的配置根据自己需要进行修改。
+
+config interface 'eth2'
+  option ifname 'eth2'
+  option proto 'dhcp'
+  
+  
+ubus call network reload
