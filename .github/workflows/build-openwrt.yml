@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/fanchmwrt/fanchmwrt
-  REPO_BRANCH: main
+  REPO_BRANCH: fanchmwrt-24.10.4
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
